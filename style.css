@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main_color: deeppink;
+    --second_color: rgb(253, 214, 220);
+}
+
+body {
+    background-color: var(--main_color);
+}
+
+#area {
+    width: 400px;
+    height: 400px;
+    background-color: var(--second_color);
+    margin-top: 100px;
+}
+
+#object {
+    background-color: var(--main_color);
+    width: 60px;
+    aspect-ratio: 1;
+    transform: translateY(-60px);
+}
+
+.start {
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movement {
+    to {
+        transform: translateY(400px);
+    }
+}
