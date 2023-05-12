@@ -14,8 +14,8 @@ body {
 }
 
 #area {
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     background-color: var(--second_color);
     margin-top: 100px;
 }
@@ -25,9 +25,10 @@ body {
     width: 60px;
     aspect-ratio: 1;
     transform: translateY(-60px);
+    position: relative;
 }
 
-.start {
+#object.start {
     animation-name: movement;
     animation-duration: 2s;
     animation-iteration-count: infinite;
